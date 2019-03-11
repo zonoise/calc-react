@@ -3,10 +3,6 @@ import { connect } from 'react-redux';
 import { inputPlus } from '../actions/calc'
 
 
-function mapStateToProps({ }) {
-    return {}
-}
-
 function mapDispatchToProps(dispatch) {
     return {
         inputPlus() {
@@ -15,4 +11,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PlusButton);
+export default connect(null, mapDispatchToProps)(PlusButton);

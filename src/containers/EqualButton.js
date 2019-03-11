@@ -2,11 +2,6 @@ import EqualButton from '../components/EqualButton';
 import { connect } from 'react-redux';
 import { inputEqual } from '../actions/calc'
 
-
-function mapStateToProps({ }) {
-    return {}
-}
-
 function mapDispatchToProps(dispatch) {
     return {
         inputEqual() {
@@ -15,4 +10,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(EqualButton);
+export default connect(null, mapDispatchToProps)(EqualButton);

@@ -2,9 +2,6 @@ import NumberButton from '../components/NumberButton';
 import { connect } from 'react-redux';
 import { inputNumber } from '../actions/calc'
 
-function mapStateToProps({ }) {
-    return {}
-}
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -14,4 +11,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NumberButton);
+export default connect(null, mapDispatchToProps)(NumberButton);
