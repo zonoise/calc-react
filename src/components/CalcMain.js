@@ -16,6 +16,7 @@ export default class CalcMain extends Component {
     render() {
 
         const calcGridStyle = {
+            margin: "auto",
             width: "500px",
             padding: "10px",
             backgroundColor: "red"
