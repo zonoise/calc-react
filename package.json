@@ -1,7 +1,7 @@
 {
   "name": "hello",
   "version": "0.1.0",
-  "homepage": "http://zonoise.github.io/calc-react",
+  "homepage": "http://zonoise.github.io/calc-react/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
