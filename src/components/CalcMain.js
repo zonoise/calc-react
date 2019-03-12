@@ -40,7 +40,7 @@ export default class CalcMain extends Component {
                     </Toolbar>
                 </AppBar>
                 <Paper style={calcGridStyle}>
-                    <Grid container spacing={100} className="Calc">
+                    <Grid container className="Calc">
                         <Navigation />
                         <Grid item xs={12}>
                             <Display />
@@ -48,15 +48,15 @@ export default class CalcMain extends Component {
 
                         <Grid item alignItems="center" xs={9} container>
                             {[7, 8, 9, 4, 5, 6, 1, 2, 3, 0].map(number => (
-                                <Grid style={buttonGridStyle} item xs={4}>
+                                <Grid key={number} style={buttonGridStyle} item xs={4}>
                                     <NumberButton number={number} />
                                 </Grid>
                             ))}
                         </Grid>
 
                         <Grid item xs={3} container alignItems="baseline">
-                            <Grid item xs="12"><PlusButton /></Grid>
-                            <Grid item xs="12"><EqualButton /></Grid>
+                            <Grid item xs={12}><PlusButton /></Grid>
+                            <Grid item xs={12}><EqualButton /></Grid>
                         </Grid>
                     </Grid>
                 </Paper>
